@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axis Event Planning Company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #ff4081;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background: #ff4081;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .services, .contact, .faq {
+            background: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .booking-form {
+            background: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #ff4081;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #e03572;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .faq-item {
+            text-align: left;
+            margin: 10px 0;
+        }
+        .faq-question {
+            background: #ff4081;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            background: #f8f8f8;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+    </style>
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.style.display === "none") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>Welcome to Axis Event Planning Company</header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Us</h2>
+             <p>We specialize in planning weddings, birthdays, corporate events, and more.</p>
+             
+            <h3>Our History</h3>
+            <p>Axis Event is a south sudanese company that provides full services and specializes in birthdays,weddings,corporate events, university graduation,fund day celebration and conferences, team building and private events.</p>
+            <p>Axis Event Planning Company was founded in <strong>January 2025</strong> with the mission to provide exceptional event planning services for weddings, birthdays, corporate events, and more. Although we are a new company, our team is passionate about delivering unforgettable experiences and ensuring every event is flawlessly executed. We're dedicated to growing and evolving, bringing fresh ideas and personalized touches to each event we plan.</p>
+            <h4>Our Missions</h4>
+                <p>Axis is committed to deliver the most creative and festive moments and cherished memories through our excellent and personalized services like no other without compromising the company's ideals and intergrity.</p>
+            
+        </section>
+        
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Wedding Planning</li>
+                <li>Birthday Celebrations</li>
+                <li>Corporate Events & Seminars</li>
+                <li>Conference Planning</li>
+                <li>University graduation</li>
+                <li>Fund day Celebrations</li>
+            </ul>
+        </section>
+        
+        <section id="gallery" class="gallery">
+            <h2>Gallery</h2>
+            <img src="  https://images.pexels.com/photos/6119578/pexels-photo-6119578.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Event Image 1">
+            <img src=" https://images.pexels.com/photos/1345574/pexels-photo-1345574.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Event Image 2">
+            <img src=" https://images.pexels.com/photos/2074911/pexels-photo-2074911.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Event Image 3">
+            <img src=" https://images.pexels.com/photos/543226/pexels-photo-543226.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Event Image 4">
+        </section>
+        
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: ngk3005@gmail.com</p>
+            <p>Phone: +211 922 301 661</p>
+        </section>
+        
+        <section class="booking-form">
+            <h2>Book Your Event</h2>
+            <form action="https://formspree.io/f/mgvopyez" method="POST"> <!-- Replace with your Formspree endpoint -->
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="date" name="date" required>
+                <textarea name="event_details" placeholder="Event Details" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="faq" class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq1')">How far in advance should I book an event?</div>
+                <div class="faq-answer" id="faq1">We recommend booking at least 3-6 months in advance to secure your desired date.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq2')">Do you offer customized event packages?</div>
+                <div class="faq-answer" id="faq2">Yes! We tailor event packages to match your needs and budget.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq3')">What is your cancellation policy?</div>
+                <div class="faq-answer" id="faq3">Cancellations must be made at least 30 days in advance for a full refund.</div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        &copy; 2025 Axis Event Planning Company. All Rights Reserved.
+    </footer>
+</body>
+</html>
+
+
